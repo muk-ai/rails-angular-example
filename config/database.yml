@@ -52,3 +52,4 @@ production:
   database: <%= Rails.application.secrets.mysql_database %>
   username: <%= Rails.application.secrets.mysql_username %>
   password: <%= Rails.application.secrets.mysql_password %>
+  socket: /var/run/mysqld/mysqld.sock

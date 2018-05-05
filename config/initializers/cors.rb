@@ -7,7 +7,8 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins '*'
+    origins 'localhost:4200', '127.0.0.1:4200',
+            'https://fervent-bartik-9c62e8.netlify.com/'
 
     resource '*',
       headers: :any,
